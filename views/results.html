@@ -1,0 +1,44 @@
+<!-- templates/lista-persona-partial -->
+<div class="panel panel-default">
+    <div class="panel-heading">Contactos</div>
+    <div class="panel-body">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                  <td><input class="form-control w8 input-sm" size="5" placeholder="Id"/></td>
+                  <td><input class="form-control w8 input-sm" size="5" placeholder="Nombre"/></td>
+                  <td><input class="form-control w8 input-sm" size="5" placeholder="Apellido"/></td>
+                  <td><input class="form-control w8 input-sm" size="5" placeholder="Alias"/></td>
+                  <td><input class="form-control w8 input-sm" size="5" placeholder="Telefono"/></td>
+                  <td><input class="form-control w8 input-sm" size="5" placeholder="Email"/></td>
+                  <td><input class="form-control w8 input-sm" size="5" placeholder="Direccion"/></td>
+                  <td><input class="form-control w8 input-sm" size="5" placeholder="Creación"/></td>
+                  <td><input class="form-control w8 input-sm" size="5" placeholder="Modificación"/></td>
+                </tr>
+
+                <tr>
+		                <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Alias</th>
+		                <th>Teléfono</th>
+                    <th>Email</th>
+                    <th>Dirección</th>
+                    <th>Creación</th>
+                    <th>Modificación</th>
+                </tr>
+            </thead>
+	    <tbody>
+                <tr ng-repeat="item in results">
+			               <td>{{item.id}}</td><td>{{item.nombre}}</td><td>{{item.apellido}}</td><td>{{item.alias}}</td><td>{{item.telefono}}</td><td>{{item.email}}</td><td>{{item.direccion}}</td><td>{{item.fechacreacion | date:'dd-MM-­yyyy HH:ss'}}</td><td>{{item.fechamodificacion | date:'dd­-MM-­yyyy HH:ss'}}</td>
+                     <td><button class="btn-xs btn-default btn-del" ng-click="getContact(item)">Ver</button></td>
+      					     <td><button class="btn-xs btn-default btn-del" ng-click="edit(item)">Editar</button></td>
+                     <td><button class="btn-xs btn-default btn-del" ng-click="deleteContact(item)">Borrar</button></td>
+                </tr>
+
+            </tbody>
+
+        </table>
+    </div>
+</div>
+<!-- Fin templates/lista-persona-partial -->

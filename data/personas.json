@@ -1,0 +1,17 @@
+[
+    {
+        "id":1,
+        "nombre": "Juan",
+        "apellido": "Perez",
+        "alias": "juan.perez",
+        "telefono": 595982949494,
+        "email": "jperez@gmail.com"
+    }, {
+        "id":2,
+        "nombre": "Jose",
+        "apellido": "Pueblo",
+        "alias": "jose.pueblo",
+        "telefono": 595982494949,
+        "email": "jpueblo@gmail.com"
+    }
+]
